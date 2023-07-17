@@ -9,7 +9,15 @@
     <link rel="stylesheet" href="css/unite.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
+    <script>
+        $(function () {
+            $("#datepicker-widget").datepicker();
+        });
+    </script>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -41,6 +49,12 @@
     <div class="pic">
         <img src="images/index.svg" alt="">
     </div>
+    <!-- 
+    <div class="book">
+        <p>Date:<br><input type="text" id="datepicker-widget"></p>
+        <p>Date:<br><input type="text" id="datepicker-widget"></p>
+    </div> -->
+
     <div class="book">
         <div class="btn">
             <label>
@@ -74,7 +88,8 @@
     </div>
 
     <div class="about">
-        <div class="txt">
+        <img class="bg" src="images/logo.png" alt="">
+        <div class="about_content">
             <h1>關於艾凡</h1>
             <p>歡迎蒞臨艾凡酒店，這裡是品味與奢華的絕佳結合之地。</p>
             <p>我們的高級酒店以無與倫比的服務和精緻的細節而聞名，為每一位客人締造難忘的入住體驗。<br>
@@ -126,7 +141,7 @@
                         <div class="date">2023/07/01-2023/08/31</div>
                     </div>
                     <p>7/1-8/28 暑假入住更優惠 ❚ 四人同行享85折優惠！</p>
-                    <img src="images/activity.jfif" alt="">
+                    <img src="images/index_activity.jpg" alt="">
                 </div>
             </div>
             <div class="col-12 col-md-6">
@@ -154,19 +169,50 @@
             </div>
         </div>
     </div>
-    <!-- <div style=""> -->
     <div class="introduce">
         <div class="intreoduce_pic">
-            <img src="https://picsum.photos/1000/350/?random=10" alt="">
+            <img style="max-width: 1000px;" src="images/index_view.jpg" alt="">
         </div>
         <div class="intreoduce_txt">
-
             <h3>極致景觀</h3>
             <p>夢幻夜色，璀璨星空，一個屬於您的宇宙奇蹟等待著您。歡迎來到我們的艾凡飯店，一個擁有絕美夜景的天堂。<br>每一間房間都特別設計，讓您盡情享受這令人陶醉的夜景。高樓層的視野廣闊，眺望著閃爍的繁星，瞭望遠方城市的燈火，您彷彿成為這個城市的主人，俯瞰著它的一切。
             </p>
         </div>
     </div>
-    <!-- </div> -->
+
+    <div class="introduce">
+        <div class="intreoduce_pic_exchange">
+            <img src="images/index_eat.jpg" alt="">
+        </div>
+        <div class="intreoduce_txt_exchange">
+            <h3>精緻佳餚</h3>
+            <p>在這個迷人的環境中，您將享受到我們獨特而精心設計的餐飲體驗。我們的廚師團隊以卓越的烹飪技巧和對食材的深刻理解，為您準備出一系列精緻絕倫的菜餚。<br>無論是獨特的風味組合還是精緻的擺盤，我們的菜品將為您帶來美食的盛宴。每一口都是一次對味蕾的冒險，讓您的舌尖感受到多重層次的美味。
+                <br>
+                <a href="#" class="more_btn">
+                    餐廳一覽
+                </a>
+            <div class="line"></div>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="introduce">
+        <div class="intreoduce_pic">
+            <img src="images/index_relax.jpg" alt="">
+        </div>
+        <div class="intreoduce_txt">
+            <h3>身心放鬆</h3>
+            <p>游泳池、SPA和健身房將為您提供一個全面的休閒和健康體驗。我們的專業團隊將竭誠為您提供舒適、放鬆和專業的服務，確保您在這些設施中度過難忘的時光。<br>來到艾凡酒店，您將感受到無限尊貴和享受，並在這裡度過難忘的時光，留下美好的回憶和無盡的放鬆。
+                <br>
+                <a href="#" class="more_btn">
+                    設施一覽
+                </a>
+            <div class="line"></div>
+            </p>
+
+        </div>
+    </div>
 
 
     <footer>

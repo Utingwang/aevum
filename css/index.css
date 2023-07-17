@@ -1,14 +1,5 @@
-.pic {
-    width: 100%;
-}
-
-.pic img {
-    width: 100%;
-    vertical-align: top;
-}
-
 .book {
-    background-color: antiquewhite;
+    background-color: rgba(232, 232, 232, 1);
     max-width: 1200px;
     margin: auto;
     padding: 10px 20px;
@@ -21,28 +12,37 @@
     margin: auto;
 }
 
+input[type="date"] {
+    font-size: 20px;
+    color: #666;
+    background-color: rgba(232, 232, 232, 1);
+    border: none;
+}
 
 
 .about {
-    background-image: url(/images/logo.png);
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    max-width: 1200px;
-    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.bg {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.3;
+    padding-top: 40px;
+}
+
+.about_content {
+    position: absolute;
+    max-width: 925px;
     margin: auto;
-}
-
-.txt {
     text-align: center;
-    padding: 20px 0;
 }
 
-.txt h1 {
-    font-size: 36px;
-}
-
-.txt p {
+.about_content p {
     max-width: 925px;
     margin: auto;
     padding-bottom: 20px;
@@ -134,23 +134,117 @@
     width: 100%;
     height: 350px;
     background-color: rgba(212, 189, 156, 1);
-    margin: 250px 0;
+    margin: 300px 0;
     position: relative;
 }
 
 .intreoduce_pic {
     position: absolute;
-    top: -150px;
-    float: left;
+    top: -100px;
+}
+
+.intreoduce_pic img {
+    border-radius: 0px 30px 30px 0px;
 }
 
 .intreoduce_txt {
     position: absolute;
-    bottom: -150px;
-    height: 350px;
+    bottom: -130px;
+    height: 250px;
+    width: 1000px;
     background-color: #fff;
     right: 0;
-    float: left;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: -4px 6px 10px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+.intreoduce_txt h3 {
+    width: 700px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.intreoduce_txt p {
+    width: 700px;
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+.intreoduce_txt a {
+    line-height: 20px;
+}
+
+.intreoduce_pic_exchange {
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+.intreoduce_pic_exchange img {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.intreoduce_txt_exchange {
+    position: absolute;
+    bottom: -130px;
+    height: 250px;
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    z-index: 1;
+}
+
+.intreoduce_txt_exchange h3 {
+    width: 700px;
+    line-height: 70px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.intreoduce_txt_exchange p {
+    width: 700px;
+    line-height: 30px;
+    padding-left: 30px;
+    margin-left: auto;
+}
+
+.intreoduce_txt_exchange a {
+    line-height: 20px;
+}
+
+.more_btn {
+    background-color: #fff;
+    padding: 10px;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid rgba(212, 189, 156, 1);
+    float: right;
+    text-decoration: none;
+    color: #333;
+    transition-duration: .5s;
+}
+
+.more_btn:hover {
+    background-color: rgba(212, 189, 156, 1);
+    padding: 10px;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid rgba(212, 189, 156, 1);
+    float: right;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.line {
+    border: 1px solid rgba(212, 189, 156, 1);
+    width: 80px;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: -16px;
 }
