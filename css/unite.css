@@ -1,0 +1,160 @@
+/* body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-family: 'Noto Serif TC', serif;
+} */
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+nav {
+    background-color: rgba(104, 104, 104, 0.5);
+    position: absolute;
+    /* position: sticky;
+    top: 0px; */
+    width: 100%;
+}
+
+.main-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+
+nav .main-header .logo {
+    max-width: 150px;
+}
+
+nav .main-header .logo img {
+    width: 100%;
+    vertical-align: top;
+}
+
+nav .main-header .maun {
+    margin: auto;
+}
+
+
+
+.maun a {
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 23px 25px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+
+.maun a:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(235, 192, 23, 1);
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.maun a:hover:after {
+    transform: scaleX(1);
+}
+
+nav .main-header .member {
+    width: 150px;
+    line-height: 40px;
+}
+
+nav .main-header .member a {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.login {
+    width: 16px;
+}
+
+.shopping {
+    width: 25px;
+}
+
+footer {
+    background-color: rgba(139, 139, 139, 1);
+    padding: 30px;
+}
+
+.maun_buttom {
+    text-align: center;
+}
+
+.maun_buttom a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 40px 30px;
+
+}
+
+.maun_buttom span {
+    color: white;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.logo img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.focus h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+.focus a {
+    padding: 0 8px;
+}
+
+.connection h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+.connection p {
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    line-height: 30px;
+}
