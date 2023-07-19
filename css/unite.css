@@ -179,5 +179,41 @@ footer {
 
 .pic p {
     position: absolute;
-    top: 140px;
+    top: 180px;
+    left: 35%;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
+
+.first {
+    background-image: url("/images/room_first.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1450px;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.first_txt {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(245, 245, 245, 1);
+    display: inline-block;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 80px;
+}
+
+.first_txt p {
+    font-size: 24px;
+    line-height: 40px;
 }

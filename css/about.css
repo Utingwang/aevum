@@ -1,0 +1,74 @@
+.about_title {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.decorate {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.name {
+    max-width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about_title_txt {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px 0;
+    position: relative;
+}
+
+.about_title_txt p {
+    line-height: 25px;
+}
+
+.decorate1 {
+    position: absolute;
+    top: 15px;
+    left: -10px;
+}
+
+.decorate2 {
+    position: absolute;
+    right: -10px;
+    bottom: 15px;
+}
+
+.exhibit {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.exhibit img {
+    max-width: 100%;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 180px;
+    background-color: rgba(212, 189, 156, 1);
+    display: inline-block;
+    position: relative;
+}
+
+.circle img {
+    max-width: 100%;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+}
+
+.photo_album {
+    width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.photo_album img {
+    max-width: 100%;
+}
