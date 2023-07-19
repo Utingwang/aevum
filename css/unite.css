@@ -188,7 +188,7 @@ footer {
 }
 
 .first {
-    background-image: url("/images/room_first.jpg");
+    background-image: url("../images/room_first.jpg");
     background-position: right top;
     background-repeat: no-repeat;
     height: 300px;
