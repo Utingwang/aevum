@@ -188,7 +188,7 @@ footer {
 }
 
 .first {
-    background-image: url("../images/room_first.jpg");
+    background-image: url("../images/food_first.jpg");
     background-position: right top;
     background-repeat: no-repeat;
     height: 300px;
@@ -216,4 +216,20 @@ footer {
 .first_txt p {
     font-size: 24px;
     line-height: 40px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    padding-left: 250px;
+}
+
+.head h1 {
+    font-size: 30px;
+    font-weight: 400;
+    display: inline;
+}
+
+.head img {
+    width: 40px;
 }

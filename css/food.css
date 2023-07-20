@@ -1,0 +1,29 @@
+nav {
+    position: static;
+}
+
+.restaurant {
+    display: flex;
+}
+
+.restaurant img {
+    position: relative;
+}
+
+.restaurant span {
+    font-size: 80px;
+    position: absolute;
+    bottom: 40px;
+    left: 38%;
+    color: rgba(212, 189, 156, 1);
+}
+
+.restaurant_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restaurant_txt h2 {}
+
+.restaurant_txt p {}

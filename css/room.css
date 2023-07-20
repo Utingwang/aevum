@@ -2,22 +2,6 @@ nav {
     position: static;
 }
 
-.head {
-    display: flex;
-    align-items: center;
-    padding-left: 250px;
-}
-
-.head h1 {
-    font-size: 30px;
-    font-weight: 400;
-    display: inline;
-}
-
-.head img {
-    width: 40px;
-}
-
 .room_bg {
     width: 1200px;
     height: 300px;
