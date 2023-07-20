@@ -26,7 +26,7 @@ nav {
 }
 
 .restaurant_taiwan {
-    background-image: url(../images/restaurant_taiwan.jpg);
+    background-image: url("../images/restaurant_taiwan.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     height: 300px;
@@ -39,7 +39,7 @@ nav {
 }
 
 .restaurant_teppanyaki {
-    background-image: url(../images/restaurant_teppanyaki.jpg);
+    background-image: url("../images/restaurant_teppanyaki.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     height: 300px;
@@ -52,7 +52,7 @@ nav {
 }
 
 .restaurant_steak {
-    background-image: url(../images/restaurant_steak.jpg);
+    background-image: url("../images/restaurant_steak.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     height: 300px;
@@ -65,7 +65,7 @@ nav {
 }
 
 .restaurant_coffee {
-    background-image: url(../images/restaurant_coffee.jpg);
+    background-image: url("../images/restaurant_coffee.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     height: 300px;
