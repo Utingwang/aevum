@@ -1,0 +1,105 @@
+nav {
+    position: static;
+}
+
+.facility {
+    max-width: 1200px;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.facility_box {
+    max-width: 500px;
+    margin: 18px;
+}
+
+.swim {
+    background-image: url("../images/swim.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    width: 500px;
+    box-shadow: 11px 11px 6px rgba(212, 189, 156, 1);
+}
+
+.spa {
+    background-image: url("../images/spa.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    width: 500px;
+    box-shadow: 11px 11px 6px rgba(212, 189, 156, 1);
+}
+
+.gym {
+    background-image: url("../images/gym.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    width: 500px;
+    box-shadow: 11px 11px 6px rgba(212, 189, 156, 1);
+}
+
+.line {
+    width: 300px;
+    height: 100%;
+    border-left: 1px solid rgba(235, 192, 23, 1);
+    position: absolute;
+    left: -10px;
+    bottom: 90px;
+}
+
+.facility_txt {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin-left: auto;
+    position: relative;
+}
+
+.facility_txt h2 {
+    padding-bottom: 6px;
+    border-left: 3px solid rgba(235, 192, 23, 1);
+    margin-bottom: 7px;
+    margin-top: 10px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.facility_txt p {
+    line-height: 40px;
+    padding-left: 10px;
+    padding-top: 40px;
+}
+
+.viewpoint {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.square {
+    width: 80%;
+}
+
+.square img {
+    margin: 5px;
+}
+
+.viewpoint_tit {
+    width: 20%;
+    background-color: rgba(212, 189, 156, 1);
+    height: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewpoint_tit h3 {}

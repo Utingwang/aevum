@@ -5,6 +5,7 @@ nav {
 .restaurant_box {
     width: 1000px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
