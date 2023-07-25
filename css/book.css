@@ -2,11 +2,11 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
+    padding-top: 40px;
 }
 
 .inquire {
     width: 40%;
-    padding-top: 40px;
 }
 
 .onclick {
@@ -95,6 +95,67 @@
     color: #fff;
 }
 
-.empty_room {
-    /* width: 60%;z */
+.empty_room {}
+
+.book_room {
+    padding-bottom: 40px;
+    width: 700px;
+}
+
+.book_room img {
+    width: 100%;
+}
+
+.book_room_txt {
+    background-color: #F5F5F5;
+    padding: 20px 90px;
+}
+
+.line {
+    border: 1px solid #000;
+    width: 480px;
+    margin: 15px 0;
+}
+
+.book_room_txt p {
+    display: inline-block;
+    padding-top: 20px;
+    margin-right: 30px;
+}
+
+.book_room_txt img {
+    width: 20px;
+}
+
+.ct {
+    padding: 10px 0;
+}
+
+.ct span {
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+.book_room_txt a {
+    display: block;
+    font-size: 13px;
+    color: #D4BD9C;
+}
+
+.btm {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.btm h3 {
+    font-weight: 500;
+}
+
+.btm button {
+    background-color: #D4BD9C;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
 }
