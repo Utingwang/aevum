@@ -1,0 +1,168 @@
+.shopping_cart {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.shopping_cart h2 {
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+.detail {
+    width: 60%;
+}
+
+.detail_title {
+    padding: 20px 0;
+    color: #fff;
+    background-color: #D4BD9C;
+    text-align: center;
+}
+
+.detail_content {
+    background-color: #F5F5F5;
+    padding: 20px 50px;
+}
+
+.detail_content p {
+    padding: 10px 0;
+}
+
+.detail_pic {
+    display: flex;
+}
+
+.detail_txt {
+    padding-left: 20px;
+}
+
+.detail_txt button {
+    font-size: 13px;
+    display: flex;
+    border: none;
+    border-bottom: 2px solid #c6c6c6;
+}
+
+.detail_txt button img {
+    width: 16px;
+}
+
+.cancel {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+table {
+    width: 570px;
+    text-align: left;
+}
+
+th,
+td {
+    color: #818181;
+    padding: 5px 0;
+    border-bottom: 1px solid #818181;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-top: 30px;
+}
+
+.total span {
+    font-size: 22px;
+}
+
+.delete {
+    background-color: #fff;
+    color: red;
+    padding: 5px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin-top: 30px;
+    margin-left: auto;
+    transition: 1s;
+}
+
+.delete p {
+    padding-left: 15px;
+}
+
+.delete:hover {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+
+.delete:hover img {
+    background-color: #fff;
+}
+
+.click {
+    padding-left: 50px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+    padding: 30px 0;
+    border: 1px solid #AFAFAF;
+    border-left: 2px solid #EBC017;
+}
+
+.price span {
+    display: block;
+    font-weight: bold;
+}
+
+.next {
+    background-color: #D4BD9C;
+    font-weight: bold;
+    color: #fff;
+    width: 360px;
+    padding: 30px 0;
+    border: none;
+    margin-top: 50px;
+    transition: 0.5s;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.next:hover {
+    background-color: #82663e;
+    color: #ffffff;
+}
+
+.append {
+    width: 360px;
+    padding: 20px 0;
+    background-color: #fff;
+    border: 1px solid #CDCDCD;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: 0.5s;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+
+.append:hover {
+    background-color: #000;
+    color: #fff;
+}

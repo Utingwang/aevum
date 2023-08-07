@@ -67,6 +67,9 @@
     width: 1200px;
     margin: auto;
     padding: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 34.5%);
 }
 
 .photo_album img {

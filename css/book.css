@@ -65,6 +65,21 @@
     width: 280px;
     margin: auto;
     padding: 10px 0;
+    position: relative;
+}
+
+.shopping_cart h4::after {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: #fff;
+    display: block;
+    content: " 1 ";
+    position: absolute;
+    bottom: 20px;
+    right: 98px;
+    font-size: 14px;
+    border-radius: 10px;
 }
 
 .details {
@@ -87,12 +102,27 @@
     justify-content: space-between;
 }
 
-.shopping_cart button {
+.shopping_cart a {
     background-color: rgba(212, 189, 156, 1);
     width: 100%;
-    height: 40px;
     border: none;
     color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.shopping_cart a:hover {
+    background-color: #82663e;
+}
+
+.shopping_cart button {
+    background-color: transparent;
+    color: rgba(212, 189, 156, 1);
+    width: 100%;
+    padding: 13px;
+    border: none;
 }
 
 .empty_room {}
@@ -114,7 +144,7 @@
 .line {
     border: 1px solid #000;
     width: 480px;
-    margin: 15px 0;
+    margin: 5px 0;
 }
 
 .book_room_txt p {

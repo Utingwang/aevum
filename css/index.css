@@ -2,21 +2,32 @@
     background-color: rgba(232, 232, 232, 1);
     max-width: 1200px;
     margin: auto;
-    padding: 0 20px;
     display: flex;
     align-items: center;
 }
 
-table {
-    border-color: rgba(180, 139, 78, 1);
-}
-
-.btn {
-    padding: 10px 20px;
+.book td {
+    padding: 10px 0;
     margin: auto;
     width: 240px;
-    box-sizing: border-box;
     text-align: center;
+    box-sizing: border-box;
+}
+
+.book td a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    transition-duration: .3s;
+}
+
+.book td a:hover {
+    color: rgb(206, 180, 142);
+    transition-duration: .3s;
+}
+
+table {
+    border-color: rgba(180, 139, 78, 1);
 }
 
 input[type="date"] {
@@ -38,7 +49,6 @@ select {
     background-color: rgba(232, 232, 232, 1);
     border: none;
 }
-
 
 .about {
     position: relative;
@@ -119,7 +129,6 @@ select {
 
 .cardd_center {
     width: 280px;
-    /* height: 250px; */
     box-sizing: border-box;
     box-shadow: 0px 13px 17px 0px rgba(0, 0, 0, 0.18);
 }
@@ -132,6 +141,7 @@ select {
 
 .cardd_center p {
     padding: 10px 20px;
+    line-height: 1.5;
 }
 
 .cardd_center img {
@@ -185,13 +195,22 @@ select {
 }
 
 .discount {
-    width: 500px;
+    max-width: 500px;
     padding: 10px 0;
 }
 
-.discount p {
+.discount a {
     font-size: 16px;
     padding: 10px 0;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+.discount a:hover {
+    color: #CEB48E;
+    transition-duration: .3s;
 }
 
 .discount img {
@@ -200,12 +219,27 @@ select {
 }
 
 .other_discount {
-    width: 400px;
+    max-width: 500px;
     padding: 5px 0;
 }
 
-.other_discount p {
+.other_discount a {
     padding: 10px 0;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+.other_discount a:hover {
+    color: #CEB48E;
+    transition-duration: .3s;
+}
+
+.balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .introduce {
@@ -233,7 +267,7 @@ select {
     background-color: #fff;
     right: 0;
     border-radius: 30px 0px 0px 30px;
-    box-shadow: -4px 6px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: -2px 2px 10px rgb(0 0 0 / 15%);
     padding: 30px;
 }
 
@@ -270,7 +304,7 @@ select {
     width: 1000px;
     background-color: #fff;
     border-radius: 0px 30px 30px 0px;
-    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
     padding: 30px;
     z-index: 1;
 }

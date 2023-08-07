@@ -44,6 +44,16 @@ nav {
     box-shadow: 11px 11px 6px rgba(212, 189, 156, 1);
 }
 
+.meeting {
+    background-image: url("../images/meeting.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    width: 500px;
+    box-shadow: 11px 11px 6px rgba(212, 189, 156, 1);
+}
+
 .line {
     width: 300px;
     height: 100%;
@@ -85,6 +95,9 @@ nav {
 
 .square {
     width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 27%);
+    grid-template-rows: repeat(3, 33%);
 }
 
 .square img {

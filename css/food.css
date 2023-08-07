@@ -24,6 +24,7 @@ nav {
     top: -50px;
     right: 0%;
     color: rgba(212, 189, 156, 1);
+    text-shadow: rgb(255 255 255) 1.1px 1.1px 1px;
 }
 
 .restaurant_taiwan {
