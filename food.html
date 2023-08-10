@@ -9,10 +9,42 @@
     <link rel="stylesheet" href="css/unite.css">
     <link rel="stylesheet" href="css/food.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
+    <input type="checkbox" name="" id="menu-switch">
+    <nav class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo-big.png" alt="">
+            </a>
+        </div>
+
+        <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="main-nav maun">
+            <a href="about.html">關於艾凡</a>
+            <a href="room.html">客房介紹</a>
+            <a href="food.html">餐飲美饌</a>
+            <a href="facility.html">飯店設施</a>
+            <a href="traffic.html">交通資訊</a>
+            <div class="member">
+                <a href="#"><img src="images/login.png" alt="登入" class="login"></a>
+                <a href="shopping_cart.html"><img src="images/shopping.png" alt="購物車" class="shopping"></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <nav>
         <div class="main-header">
             <div class="logo">
                 <a href="index.html"><img src="images/logo-big.png" alt="logo"></a>
@@ -29,7 +61,7 @@
                 <a href="shopping_cart.html"><img src="images/shopping.png" alt="購物車" class="shopping"></a>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <div class="head">
         <img src="images/logo.png" alt="餐飲美饌首圖">
@@ -44,7 +76,7 @@
 
     <div class="dinner">
         <div class="restaurant_box">
-            <div class="restaurant restaurant_taiwan">
+            <div class="restaurant bg_taiwan">
                 <span>01</span>
             </div>
             <div class="content restaurant_txt">
@@ -54,19 +86,24 @@
             </div>
         </div>
 
-        <div class="restaurant_box_exchange">
-            <div class="content restaurant_txt_exchange">
+        <div class="restaurant_box">
+            <div class="content restaurant_txt_exchange_c">
                 <h2>華麗牛排宮</h2>
                 <div class="restaurant_line_exchange"></div>
                 <p>精心挑選的頂級牛肉，<br>環境雅致舒適，提供尊貴的用餐體驗。</p>
             </div>
-            <div class="restaurant restaurant_steak">
+            <div class="restaurant bg_steak">
                 <span>02</span>
+            </div>
+            <div class="content restaurant_txt_exchange_p">
+                <h2>華麗牛排宮</h2>
+                <div class="restaurant_line_exchange"></div>
+                <p>精心挑選的頂級牛肉，<br>環境雅致舒適，提供尊貴的用餐體驗。</p>
             </div>
         </div>
 
         <div class="restaurant_box">
-            <div class="restaurant restaurant_teppanyaki">
+            <div class="restaurant bg_teppanyaki">
                 <span>03</span>
             </div>
             <div class="content restaurant_txt">
@@ -76,14 +113,19 @@
             </div>
         </div>
 
-        <div class="restaurant_box_exchange">
-            <div class="content restaurant_txt_exchange">
+        <div class="restaurant_box">
+            <div class="content restaurant_txt_exchange_c">
                 <h2>香榭時光咖啡廳</h2>
                 <div class="restaurant_line_exchange"></div>
                 <p>沉浸在愉悅的音樂和咖啡香氣中，<br>享受放鬆和交流的寶貴時光。</p>
             </div>
-            <div class="restaurant restaurant_coffee">
+            <div class="restaurant bg_coffee">
                 <span>04</span>
+            </div>
+            <div class="content restaurant_txt_exchange_p">
+                <h2>華麗牛排宮</h2>
+                <div class="restaurant_line_exchange"></div>
+                <p>精心挑選的頂級牛肉，<br>環境雅致舒適，提供尊貴的用餐體驗。</p>
             </div>
         </div>
     </div>

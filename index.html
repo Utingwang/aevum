@@ -26,8 +26,37 @@
 </head>
 
 <body>
+    <input type="checkbox" name="" id="menu-switch">
+    <nav class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo-big.png" alt="">
+            </a>
+        </div>
 
-    <nav>
+        <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="main-nav maun">
+            <a href="about.html">關於艾凡</a>
+            <a href="room.html">客房介紹</a>
+            <a href="food.html">餐飲美饌</a>
+            <a href="facility.html">飯店設施</a>
+            <a href="traffic.html">交通資訊</a>
+            <div class="member">
+                <a href="#"><img src="images/login.png" alt="登入" class="login"></a>
+                <a href="shopping_cart.html"><img src="images/shopping.png" alt="購物車" class="shopping"></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- <nav>
         <div class="main-header">
             <div class="logo">
                 <a href="index.html"><img src="images/logo-big.png" alt="logo"></a>
@@ -44,7 +73,7 @@
                 <a href="shopping_cart.html"><img src="images/shopping.png" alt="購物車" class="shopping"></a>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <div class="pic">
         <img src="images/index.jpg" alt="首頁首圖">
@@ -96,6 +125,53 @@
         </table>
     </div>
 
+    <div class="book_phone">
+        <table RULES=COLS>
+            <tr>
+                <td>
+                    <label>
+                        入住日期<br>
+                        <input type="date">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        退房日期<br>
+                        <input type="date">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">入住人數<br></label>
+                    <select name="" id="">
+                        <option value="">2</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="">房間數<br></label>
+                    <select name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="book.html">
+                        查看空房
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
     <section class="about">
         <img class="bg" src="images/logo.png" alt="關於艾凡酒店">
         <div class="about_content">
@@ -105,36 +181,6 @@
                 從您踏進大堂的那一刻起，我們的專業團隊將竭盡全力，以完美的禮儀和熱情的服務迎接您。</p>
         </div>
     </section>
-
-    <!-- <div class="room">
-        <h2>客房</h2>
-        <div class="container">
-            <div class="row">
-                <div class="card">
-                    <img src="images/aveum_room.png" alt="">
-                    <h3>艾凡套房</h3>
-                </div>
-                <div class="card">
-                    <img src="images/high_room.jfif" alt="">
-                    <h3>高級客房</h3>
-                </div>
-                <div class="card">
-                    <img src="images/luxury_room.jfif" alt="">
-                    <h3>豪華套房</h3>
-                    <p>豪華套房擁有寬敞的客廳區域，設有獨立的用餐區域和寬敞的露台，讓您欣賞壯麗的景色，享受美好的時光。</p>
-                </div>
-                <div class="card">
-                    <img src="images/family_room.jfif" alt="">
-                    <h3>家庭客房</h3>
-                </div>
-                <div class="card">
-                    <img src="images/luxury_family_room.jfif" alt="">
-                    <h3>豪華家庭套房</h3>
-                </div>
-            </div>
-        </div>
-        <span>〈 1 / 5 〉</span>
-    </div> -->
 
     <section class="room2">
         <h2>客房</h2>
@@ -163,6 +209,76 @@
         </div>
         <img class="r1-5" src="images/1-5.svg" alt="按鈕">
     </section>
+
+    <!-- -------------------網路房間輪播 ------------------- -->
+    <!-- <script type="text/javascript" src="js/index.js"></script>
+    <div style="padding: 20px 0;">
+        <div class="slide_box">
+            <div class="slide_wrapper">
+                <img src="./images/index_room01.jpg" class="slide_image">
+                <img src="./images/index_room02.jpg" class="slide_image">
+                <img src="./images/index_room03.jpg" class="slide_image">
+                <img src="./images/index_room04.jpg" class="slide_image">
+                <img src="./images/index_room05.jpg" class="slide_image">
+            </div>
+            <div class="slide_btn" id="btn">
+                <span class="direction slide_left">＜</span>
+                <span class="direction slide_right">＞</span>
+            </div>
+            <ul class="slide_point"></ul>
+        </div>
+    </div> -->
+    <!-- -------------------網路房間輪播 ------------------- -->
+
+
+
+    <!-- -------------------老師房間輪播------------------- -->
+    <div class="itemView">
+        <div class="wrap">
+            <div class="item">
+                <img src="images/index_room01.jpg">
+                <p>Hello Room 000</p>
+            </div>
+            <div class="item">
+                <img src="images/index_room02.jpg">
+                <p>Hello Room 111</p>
+            </div>
+            <div class="item">
+                <img src="images/index_room03.jpg">
+                <p>Hello Room 222</p>
+            </div>
+            <div class="item">
+                <img src="images/index_room04.jpg">
+                <p>Hello Room 333</p>
+            </div>
+            <div class="item">
+                <img src="images/index_room05.jpg">
+                <p>Hello Room 444</p>
+            </div>
+            <!-- <div class="item">
+                <img src="big_03.jpg">
+                <p>Hello Room 555</p>
+            </div>
+            <div class="item">
+                <img src="big_01.jpg">
+                <p>Hello Room 666</p>
+            </div>
+            <div class="item">
+                <img src="big_02.jpg">
+                <p>Hello Room 777</p>
+            </div>
+            <div class="item">
+                <img src="big_03.jpg">
+                <p>Hello Room 888</p>
+            </div> -->
+        </div>
+    </div>
+    <div id="shiftPanel" style="text-align:center;padding-top:10px;">
+        <input type="button" id="btnLeft" value="<<" disabled style="font-weight:bold;font-size:20px">
+        <input type="button" id="btnRight" value=">>" style="font-weight:bold;font-size:20px">
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- -------------------老師房間輪播------------------- -->
 
     <section class="container">
         <h2>優惠活動</h2>
@@ -208,7 +324,7 @@
     <section style="background-color:  rgba(212, 189, 156, 1);">
         <article class="introduce">
             <div class="intreoduce_pic">
-                <img style="max-width: 1000px;" src="images/index_view.jpg" alt="極致景觀">
+                <img src="images/index_view.jpg" alt="極致景觀">
             </div>
             <div class="intreoduce_txt">
                 <h3>極致景觀</h3>

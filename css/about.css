@@ -1,12 +1,63 @@
+@media screen and (max-width:767px) {
+    .exhibit .circle:nth-child(1) {
+        top: 0;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 180px;
+        background-color: rgba(212, 189, 156, 1);
+        display: inline-block;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .exhibit .circle:nth-child(1) {
+        top: 0;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 180px;
+        background-color: rgba(212, 189, 156, 1);
+        display: inline-block;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .exhibit .circle:nth-child(1) {
+        top: -200px;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 180px;
+        background-color: rgba(212, 189, 156, 1);
+        display: inline-block;
+        position: relative;
+    }
+}
+
+
+
 .about_title {
     max-width: 1200px;
     margin: auto;
 }
 
 .decorate {
-    max-width: 100%;
-    text-align: center;
+    max-width: 500px;
     padding-top: 30px;
+    margin: auto;
+}
+
+.decorate img {
+    width: 100%;
 }
 
 .name {
@@ -47,14 +98,14 @@
     max-width: 100%;
 }
 
-.circle {
+/* .circle {
     width: 200px;
     height: 200px;
     border-radius: 180px;
     background-color: rgba(212, 189, 156, 1);
     display: inline-block;
     position: relative;
-}
+} */
 
 .circle img {
     max-width: 100%;
@@ -63,8 +114,12 @@
     top: -10px;
 }
 
+/* .exhibit .circle:nth-child(1) {
+    top: -200px;
+} */
+
 .photo_album {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     padding: 60px 0;
     display: grid;
@@ -74,4 +129,49 @@
 
 .photo_album img {
     max-width: 100%;
+}
+
+/* -----------小圖漂浮效果---------- */
+.move1 {
+    animation: mymove1 5s infinite linear;
+}
+
+@keyframes mymove1 {
+    0% {
+        transform: translate3d(0, 5%, 0);
+    }
+
+    25% {
+        transform: translate3d(5%, -5%, 0);
+    }
+
+    75% {
+        transform: translate3d(-5%, -10%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 5%, 0);
+    }
+}
+
+.move2 {
+    animation: mymove2 5s infinite linear;
+}
+
+@keyframes mymove2 {
+    0% {
+        transform: translate3d(0, 0%, 0);
+    }
+
+    25% {
+        transform: translate3d(0, 10%, 0);
+    }
+
+    75% {
+        transform: translate3d(0, -5%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0%, 0);
+    }
 }

@@ -9,10 +9,41 @@
     <link rel="stylesheet" href="css/unite.css">
     <link rel="stylesheet" href="css/book.css">
     <link rel="stylesheet" href="css/grid.css">
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/book.js"></script>
 </head>
 
 <body>
-    <nav>
+    <input type="checkbox" name="" id="menu-switch">
+    <nav class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo-big.png" alt="">
+            </a>
+        </div>
+
+        <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="main-nav maun">
+            <a href="about.html">關於艾凡</a>
+            <a href="room.html">客房介紹</a>
+            <a href="food.html">餐飲美饌</a>
+            <a href="facility.html">飯店設施</a>
+            <a href="traffic.html">交通資訊</a>
+            <div class="member">
+                <a href="#"><img src="images/login.png" alt="登入" class="login"></a>
+                <a href="shopping_cart.html"><img src="images/shopping.png" alt="購物車" class="shopping"></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <nav>
         <div class="main-header">
             <div class="logo">
                 <a href="index.html"><img src="images/logo-big.png" alt="logo"></a>
@@ -29,7 +60,7 @@
                 <a href="shopping_cart.html"><img src="images/shopping.png" alt="購物車" class="shopping"></a>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
 
     <div class="pic">
@@ -115,6 +146,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="book_room">
                 <img src="images/book02.jpg" alt="豪華套房">
                 <div class="book_room_txt">
@@ -185,7 +217,21 @@
                 </div>
             </div>
             <div class="book_room">
-                <img src="images/book05.jpg" alt="艾凡套房">
+                <!-- <img src="images/book05.jpg" alt="艾凡套房"> -->
+                <div id="sliderBoard">
+                    <ul id="content">
+                        <li><img src="images/book05.jpg" class="image"></li>
+                        <li><img src="images/book05.jpg" class="image"></li>
+                        <li><img src="images/book05.jpg" class="image"></li>
+                        <li><img src="images/book05.jpg" class="image"></li>
+                        <li><img src="images/book05.jpg" class="image"></li>
+                        <li><img src="images/book05.jpg" class="image"></li>
+                        <li><img src="images/book05.jpg" class="image"></li>
+                        <li><img src="images/book05.jpg" class="image"></li>
+                    </ul>
+                    <ul id="contentButton">
+                    </ul>
+                </div>
                 <div class="book_room_txt">
                     <h3>艾凡套房</h3>
                     <div class="line"></div>
@@ -209,6 +255,24 @@
             </div>
         </div>
     </div>
+
+
+    <!-- 
+    <div id="sliderBoard">
+        <ul id="content">
+            <li><img src="images/book02.jpg" class="image"></li>
+            <li><img src="images/book02.jpg" class="image"></li>
+            <li><img src="images/book02.jpg" class="image"></li>
+            <li><img src="images/book02.jpg" class="image"></li>
+            <li><img src="images/book02.jpg" class="image"></li>
+            <li><img src="images/book02.jpg" class="image"></li>
+            <li><img src="images/book02.jpg" class="image"></li>
+            <li><img src="images/book02.jpg" class="image"></li>
+        </ul>
+        <ul id="contentButton">
+        </ul>
+    </div> -->
+
 
     <a href="book.html" class="fast">
         快速訂房
