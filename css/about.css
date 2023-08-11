@@ -69,7 +69,7 @@
 .about_title_txt {
     max-width: 400px;
     margin: auto;
-    padding: 30px 0;
+    padding: 30px 10px;
     position: relative;
 }
 
@@ -80,12 +80,12 @@
 .decorate1 {
     position: absolute;
     top: 15px;
-    left: -10px;
+    left: 0px;
 }
 
 .decorate2 {
     position: absolute;
-    right: -10px;
+    right: 0px;
     bottom: 15px;
 }
 
