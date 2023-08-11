@@ -39,7 +39,7 @@
         border: none;
     }
 
-    label {
+    .book label {
         font-size: 20px;
         color: #000;
         background-color: rgba(232, 232, 232, 1);
@@ -140,7 +140,7 @@
         border: none;
     }
 
-    label {
+    .book label {
         font-size: 20px;
         color: #000;
         background-color: rgba(232, 232, 232, 1);
@@ -233,7 +233,7 @@
         border: none;
     }
 
-    label {
+    .book label {
         font-size: 20px;
         color: #000;
         background-color: rgba(232, 232, 232, 1);
