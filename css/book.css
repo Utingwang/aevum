@@ -1,15 +1,116 @@
-.book {
+@media screen and (max-width:767px) {
+    .shopping_cart {
+        width: 360px;
+        background-color: #F5F5F5;
+        border-top: 3px solid rgba(235, 192, 23, 1);
+        padding: 40px;
+        box-sizing: border-box;
+        padding-top: 40px;
+        margin-top: 40px;
+        display: none;
+    }
+
+    .book {
+        max-width: 1200px;
+        margin: auto;
+        display: block;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .shopping_cart {
+        width: 360px;
+        background-color: #F5F5F5;
+        border-top: 3px solid rgba(235, 192, 23, 1);
+        padding: 40px;
+        box-sizing: border-box;
+        padding-top: 40px;
+        margin-top: 40px;
+        display: none;
+    }
+
+    .book {
+        max-width: 1200px;
+        margin: auto;
+        display: block;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .shopping_cart {
+        width: 360px;
+        background-color: #F5F5F5;
+        border-top: 3px solid rgba(235, 192, 23, 1);
+        padding: 40px;
+        box-sizing: border-box;
+        padding-top: 40px;
+        margin-top: 40px;
+        display: block;
+    }
+
+    .book {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        padding-top: 40px;
+    }
+}
+
+
+/* .book {
     max-width: 1200px;
     margin: auto;
     display: flex;
     padding-top: 40px;
-}
+} */
 
 .inquire {
     width: 40%;
 }
 
 .onclick {
+    max-width: 360px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #C2C2C2;
+    background: var(--txt-area, #F5F5F5);
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.25);
+    margin: 13px 0;
+    font-weight: bold;
+}
+
+.onclick label {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.onclick label img {
+    padding: 0 10px;
+}
+
+.onclick label input {
+    border: none;
+    padding-left: 20px;
+    background-color: transparent;
+    max-width: 240px;
+    height: 80px;
+}
+
+.onclick select {
+    border: none;
+    padding-left: 20px;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+
+/* .onclick {
     width: 360px;
     height: 80px;
     display: flex;
@@ -19,7 +120,7 @@
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.25);
     margin: 13px 0;
     justify-content: space-between;
-}
+} */
 
 .data {
     padding: 0 30px;
@@ -49,7 +150,7 @@
     background: var(--txt-area, #F5F5F5);
 }
 
-.shopping_cart {
+/* .shopping_cart {
     width: 360px;
     background-color: #F5F5F5;
     border-top: 3px solid rgba(235, 192, 23, 1);
@@ -57,7 +158,7 @@
     box-sizing: border-box;
     padding-top: 40px;
     margin-top: 40px;
-}
+} */
 
 .shopping_cart h4 {
     text-align: center;
@@ -129,7 +230,7 @@
 
 .book_room {
     padding-bottom: 40px;
-    width: 700px;
+    max-width: 700px;
 }
 
 .book_room img {
@@ -143,7 +244,7 @@
 
 .line {
     border: 1px solid #000;
-    width: 480px;
+    max-width: 480px;
     margin: 5px 0;
 }
 
@@ -200,16 +301,15 @@
 
 .image {
     width: 100%;
-    /* height: 500px; */
+    /* height: 460px; */
 }
 
 #sliderBoard {
     /* div */
-    /* border: 1px solid #ccc; */
-    width: 60%;
-    height: 320px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 500px;
     /* margin: 100px auto; */
-
     overflow: hidden;
 }
 
@@ -228,7 +328,7 @@
     border: 1px solid red;
     text-align: center;
     width: 100%;
-    height: 50px;
+    height: 40px;
 }
 
 #contentButton li {

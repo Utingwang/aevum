@@ -21,6 +21,40 @@ $(document).ready(function () {
             left: index * divWidth * -1
         })
 
+        $(function () {
+            let divWidth = $('#sliderBoard').width()
+            let divHeight = $('#sliderBoard').height()
+            let liWidth = $('#content li').width()
+            let liHeight = $('#content li').height()
+            let ulWidth = $('#content').width()
+            let ulHeight = $('#content').height()
+
+            moveCenter()
+            $(window).resize(function () {
+                moveCenter()
+            })
+
+            function moveCenter() {
+                let winWidth = $(window).width()
+                let winHeight = $(window).height()
+
+                $('#sliderBoard').css({
+                    left: (winWidth - divWidth) / 2,
+                    top: (winHeight - divHeight) / 2,
+                })
+
+                $('#content li').css({
+                    left: (winWidth - liWidth) / 2,
+                    top: (winHeight - liHeight) / 2,
+                })
+
+                $('#content').css({
+                    left: (winWidth - ulWidth) / 2,
+                    top: (winHeight - ulHeight) / 2,
+                })
+            }
+        })
+
         $(this).addClass('clicked')
         $(`#contentButton li`).not(this).removeClass('clicked')
 
