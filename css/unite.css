@@ -941,6 +941,6 @@ nav {
 
 @media screen and (min-width: 768px) and (hover:hover) {
     .main-nav a:hover {
-        color: rgb(0, 0, 0);
+        color: #CEB48E;
     }
 }
