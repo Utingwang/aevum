@@ -1,3 +1,4 @@
+// ---------------------圖片倫播---------------------
 $(document).ready(function () {
     let divWidth = $('.sliderBoard').width()
     let imgCount = $('.content li').length
@@ -78,3 +79,67 @@ $(document).ready(function () {
         $(`.contentButton li`).not(`:eq(${index})`).removeClass('clicked')
     }
 });
+
+
+// ---------------------隱藏文字---------------------
+var isShow = false;
+function showMore1() {
+    if (!isShow) {
+        isShow = true;
+        document.getElementById('hideMore1').style.display = '';
+        document.getElementById('showMore1').innerText = "顯示部分內容";
+    }
+    else {
+        isShow = false;
+        document.getElementById('hideMore1').style.display = 'none';
+        document.getElementById('showMore1').innerText = "查看更多";
+    }
+}
+function showMore2() {
+    if (!isShow) {
+        isShow = true;
+        document.getElementById('hideMore2').style.display = '';
+        document.getElementById('showMore2').innerText = "顯示部分內容";
+    }
+    else {
+        isShow = false;
+        document.getElementById('hideMore2').style.display = 'none';
+        document.getElementById('showMore2').innerText = "查看更多";
+    }
+}
+function showMore3() {
+    if (!isShow) {
+        isShow = true;
+        document.getElementById('hideMore3').style.display = '';
+        document.getElementById('showMore3').innerText = "顯示部分內容";
+    }
+    else {
+        isShow = false;
+        document.getElementById('hideMore3').style.display = 'none';
+        document.getElementById('showMore3').innerText = "查看更多";
+    }
+}
+function showMore4() {
+    if (!isShow) {
+        isShow = true;
+        document.getElementById('hideMore4').style.display = '';
+        document.getElementById('showMore4').innerText = "顯示部分內容";
+    }
+    else {
+        isShow = false;
+        document.getElementById('hideMore4').style.display = 'none';
+        document.getElementById('showMore4').innerText = "查看更多";
+    }
+}
+function showMore5() {
+    if (!isShow) {
+        isShow = true;
+        document.getElementById('hideMore5').style.display = '';
+        document.getElementById('showMore5').innerText = "顯示部分內容";
+    }
+    else {
+        isShow = false;
+        document.getElementById('hideMore5').style.display = 'none';
+        document.getElementById('showMore5').innerText = "查看更多";
+    }
+}

@@ -36,8 +36,8 @@
             <a href="food.html">餐飲美饌</a>
             <a href="facility.html">飯店設施</a>
             <a href="traffic.html">交通資訊</a>
+            <a href="book.html">訂房</a>
             <div class="member">
-                <a href="#"><img src="images/login.png" alt="登入" class="login"></a>
                 <a href="shopping_cart.html"><img src="images/shopping.png" alt="購物車" class="shopping"></a>
             </div>
         </div>
@@ -89,36 +89,6 @@
                     <option value="">4</option>
                 </select>
             </div>
-            <!-- <button class="onclick">
-                <div class="data">
-                    <img src="images/date.svg" alt="入住艾凡飯店">
-                    入住
-                    <span>07/03</span>
-                </div>
-                <div class="down">
-                    <img src="images/arrow_down.svg" alt="箭頭">
-                </div>
-            </button>
-            <button class="onclick">
-                <div class="data">
-                    <img src="images/date.svg" alt="艾凡飯店退房">
-                    退房
-                    <span>07/04</span>
-                </div>
-                <div class="down">
-                    <img src="images/arrow_down.svg" alt="箭頭">
-                </div>
-            </button>
-            <button class="onclick">
-                <div class="data">
-                    <img src="images/pople.svg" alt="人數">
-                    人數
-                    <span>2</span>
-                </div>
-                <div class="down">
-                    <img src="images/arrow_down.svg" alt="箭頭">
-                </div>
-            </button> -->
             <button class="search">搜尋</button>
             <div class="shopping_cart">
                 <h4>購物車</h4>
@@ -139,7 +109,7 @@
                     <span>TWD5,500</span>
                 </div>
                 <a href="shopping_cart.html">立即訂購</a>
-                <button>刪除房間</button>
+                <button><span>刪除房間</span></button>
             </div>
         </div>
         <div class="empty_room">
@@ -159,10 +129,22 @@
                         <span>免費WiFi</span>
                         <span>早餐</span>
                     </div>
-                    <a href="#">查看更多</a>
+                    <a id="showMore1" onclick="showMore1()" href="javascript:;">查看更多</a>
+                    <div id="hideMore1" style="display: none;">
+                        <span class="more">
+                            <img src="images/tick.svg" alt="">免費盥洗用品 <img src="images/tick.svg" alt="">淋浴間 <img
+                                src="images/tick.svg" alt="">保險箱 <img src="images/tick.svg" alt="">廁所 <img
+                                src="images/tick.svg" alt="">毛巾 <img src="images/tick.svg" alt="">床單 <img
+                                src="images/tick.svg" alt="">書桌 <img src="images/tick.svg" alt="">電視 <img
+                                src="images/tick.svg" alt="">拖鞋 <img src="images/tick.svg" alt="">冰箱 <img
+                                src="images/tick.svg" alt="">電話 <img src="images/tick.svg" alt="">吹風機 <img
+                                src="images/tick.svg" alt="">電熱水壺 <img src="images/tick.svg" alt="">有線頻道 <img
+                                src="images/tick.svg" alt="">喚醒服務 <img src="images/tick.svg" alt="">衛生紙
+                        </span>
+                    </div>
                     <div class="btm">
                         <h3>NT$4,500</h3>
-                        <button>加入購物車</button>
+                        <a href="shopping_cart.html">加入購物車</a>
                     </div>
                 </div>
             </div>
@@ -183,10 +165,22 @@
                         <span>免費WiFi</span>
                         <span>早餐</span>
                     </div>
-                    <a href="#">查看更多</a>
+                    <a id="showMore2" onclick="showMore2()" href="javascript:;">查看更多</a>
+                    <div id="hideMore2" style="display: none;">
+                        <span class="more">
+                            <img src="images/tick.svg" alt="">免費盥洗用品 <img src="images/tick.svg" alt="">淋浴間 <img
+                                src="images/tick.svg" alt="">保險箱 <img src="images/tick.svg" alt="">廁所 <img
+                                src="images/tick.svg" alt="">毛巾 <img src="images/tick.svg" alt="">床單 <img
+                                src="images/tick.svg" alt="">書桌 <img src="images/tick.svg" alt="">電視 <img
+                                src="images/tick.svg" alt="">拖鞋 <img src="images/tick.svg" alt="">冰箱 <img
+                                src="images/tick.svg" alt="">電話 <img src="images/tick.svg" alt="">吹風機 <img
+                                src="images/tick.svg" alt="">電熱水壺 <img src="images/tick.svg" alt="">有線頻道 <img
+                                src="images/tick.svg" alt="">喚醒服務 <img src="images/tick.svg" alt="">衛生紙
+                        </span>
+                    </div>
                     <div class="btm">
                         <h3>NT$5,500</h3>
-                        <button>加入購物車</button>
+                        <a href="shopping_cart.html">加入購物車</a>
                     </div>
                 </div>
             </div>
@@ -206,10 +200,22 @@
                         <span>免費WiFi</span>
                         <span>早餐</span>
                     </div>
-                    <a href="#">查看更多</a>
+                    <a id="showMore3" onclick="showMore3()" href="javascript:;">查看更多</a>
+                    <div id="hideMore3" style="display: none;">
+                        <span class="more">
+                            <img src="images/tick.svg" alt="">免費盥洗用品 <img src="images/tick.svg" alt="">淋浴間 <img
+                                src="images/tick.svg" alt="">保險箱 <img src="images/tick.svg" alt="">廁所 <img
+                                src="images/tick.svg" alt="">毛巾 <img src="images/tick.svg" alt="">床單 <img
+                                src="images/tick.svg" alt="">書桌 <img src="images/tick.svg" alt="">電視 <img
+                                src="images/tick.svg" alt="">拖鞋 <img src="images/tick.svg" alt="">冰箱 <img
+                                src="images/tick.svg" alt="">電話 <img src="images/tick.svg" alt="">吹風機 <img
+                                src="images/tick.svg" alt="">電熱水壺 <img src="images/tick.svg" alt="">有線頻道 <img
+                                src="images/tick.svg" alt="">喚醒服務 <img src="images/tick.svg" alt="">衛生紙
+                        </span>
+                    </div>
                     <div class="btm">
                         <h3>NT$7,000</h3>
-                        <button>加入購物車</button>
+                        <a href="shopping_cart.html">加入購物車</a>
                     </div>
                 </div>
             </div>
@@ -229,10 +235,22 @@
                         <span>免費WiFi</span>
                         <span>早餐</span>
                     </div>
-                    <a href="#">查看更多</a>
+                    <a id="showMore4" onclick="showMore4()" href="javascript:;">查看更多</a>
+                    <div id="hideMore4" style="display: none;">
+                        <span class="more">
+                            <img src="images/tick.svg" alt="">免費盥洗用品 <img src="images/tick.svg" alt="">淋浴間 <img
+                                src="images/tick.svg" alt="">保險箱 <img src="images/tick.svg" alt="">廁所 <img
+                                src="images/tick.svg" alt="">毛巾 <img src="images/tick.svg" alt="">床單 <img
+                                src="images/tick.svg" alt="">書桌 <img src="images/tick.svg" alt="">電視 <img
+                                src="images/tick.svg" alt="">拖鞋 <img src="images/tick.svg" alt="">冰箱 <img
+                                src="images/tick.svg" alt="">電話 <img src="images/tick.svg" alt="">吹風機 <img
+                                src="images/tick.svg" alt="">電熱水壺 <img src="images/tick.svg" alt="">有線頻道 <img
+                                src="images/tick.svg" alt="">喚醒服務 <img src="images/tick.svg" alt="">衛生紙
+                        </span>
+                    </div>
                     <div class="btm">
                         <h3>NT$8,000</h3>
-                        <button>加入購物車</button>
+                        <a href="shopping_cart.html">加入購物車</a>
                     </div>
                 </div>
             </div>
@@ -263,10 +281,22 @@
                         <span>免費WiFi</span>
                         <span>早餐</span>
                     </div>
-                    <a href="#">查看更多</a>
+                    <a id="showMore5" onclick="showMore5()" href="javascript:;">查看更多</a>
+                    <div id="hideMore5" style="display: none;">
+                        <span class="more">
+                            <img src="images/tick.svg" alt="">免費盥洗用品 <img src="images/tick.svg" alt="">淋浴間 <img
+                                src="images/tick.svg" alt="">保險箱 <img src="images/tick.svg" alt="">廁所 <img
+                                src="images/tick.svg" alt="">毛巾 <img src="images/tick.svg" alt="">床單 <img
+                                src="images/tick.svg" alt="">書桌 <img src="images/tick.svg" alt="">電視 <img
+                                src="images/tick.svg" alt="">拖鞋 <img src="images/tick.svg" alt="">冰箱 <img
+                                src="images/tick.svg" alt="">電話 <img src="images/tick.svg" alt="">吹風機 <img
+                                src="images/tick.svg" alt="">電熱水壺 <img src="images/tick.svg" alt="">有線頻道 <img
+                                src="images/tick.svg" alt="">喚醒服務 <img src="images/tick.svg" alt="">衛生紙
+                        </span>
+                    </div>
                     <div class="btm">
                         <h3>NT$16,800</h3>
-                        <button>加入購物車</button>
+                        <a href="shopping_cart.html">加入購物車</a>
                     </div>
                 </div>
             </div>

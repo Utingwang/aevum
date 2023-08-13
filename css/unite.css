@@ -406,6 +406,10 @@ a {
     font-family: HanaMinA;
 }
 
+span {
+    font-family: HanaMinA;
+}
+
 /* nav {
     background-color: rgba(104, 104, 104, 70%);
     position: absolute;
@@ -774,12 +778,23 @@ nav {
     font-size: 20px;
 }
 
-.login {
-    width: 16px;
-}
-
 .shopping {
     width: 21px;
+    position: relative;
+}
+
+.shopping::after {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: #fff;
+    display: block;
+    content: " 1 ";
+    position: absolute;
+    bottom: 20px;
+    right: 98px;
+    font-size: 14px;
+    border-radius: 10px;
 }
 
 .maun a {
