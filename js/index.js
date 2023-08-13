@@ -152,32 +152,73 @@
 // });
 
 
-//老師用
-function $id(id) {  //$id("btnLeft")
-    return document.getElementById(id);  //document.getElementById("btnLeft")
+//--------------------老師用--------------------
+// function $id(id) {  //$id("btnLeft")
+// return document.getElementById(id);  //document.getElementById("btnLeft")
+// }
+
+
+// window.addEventListener("load", function () {
+
+//     let wrap = document.querySelector(".wrap");
+//     let curIndex = 0;
+//     //-----------------------------------------btnLeft.onclick
+//     $id("btnLeft").onclick = function () {
+//         curIndex--;
+//         wrap.style.left = -230 * curIndex + "px";
+//         if (curIndex === 0) {
+//             $id("btnLeft").disabled = true;
+//         }
+//         $id("btnRight").disabled = false;
+//     }
+//     //-----------------------------------------btnRight.onclick
+//     $id("btnRight").onclick = function () {
+//         curIndex++;
+//         wrap.style.left = -230 * curIndex + "px";
+//         if (curIndex === 5) {
+//             $id("btnRight").disabled = true;
+//         }
+//         $id("btnLeft").disabled = false;
+//     }
+// })
+
+// window.addEventListener("load", function () {
+//     let wrap = document.querySelector(".wrap");
+//     let curIndex = 0;
+
+//     $id("btnLeft").onclick = function () {
+//         curIndex = (curIndex + 4) % 5;
+//         wrap.style.left = -310 * curIndex + "px";
+//         $id("btnRight").disabled = false;
+//         $id("btnLeft").disabled = curIndex === 0;
+//     }
+
+//     $id("btnRight").onclick = function () {
+//         curIndex = (curIndex + 1) % 5;
+//         wrap.style.left = -310 * curIndex + "px";
+//         $id("btnLeft").disabled = false;
+//         $id("btnRight").disabled = curIndex === 0;
+//     }
+// });
+
+
+function $id(id) {
+    return document.getElementById(id)
 }
-
-
 window.addEventListener("load", function () {
+    let itemView = $id("roomView");
+    let items = document.getElementsByClassName("room");
 
-    let wrap = document.querySelector(".wrap");
-    let curIndex = 0;
     //-----------------------------------------btnLeft.onclick
     $id("btnLeft").onclick = function () {
-        curIndex--;
-        wrap.style.left = -310 * curIndex + "px";
-        if (curIndex === 0) {
-            $id("btnLeft").disabled = true;
-        }
-        $id("btnRight").disabled = false;
+        let last = items[items.length - 1];
+        itemView.insertBefore(last, items[0]);
     }
+
     //-----------------------------------------btnRight.onclick
     $id("btnRight").onclick = function () {
-        curIndex++;
-        wrap.style.left = -310 * curIndex + "px";
-        if (curIndex === 5) {
-            $id("btnRight").disabled = true;
-        }
-        $id("btnLeft").disabled = false;
+        let last = items[items.length];
+        // itemView.appendChild(last);
+        itemView.insertBefore(items[0], last);
     }
 })
