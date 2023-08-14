@@ -552,11 +552,16 @@ footer {
     line-height: 40px;
 }
 
-.connection p {
+.connection .link a {
     font-size: 14px;
     color: white;
     font-weight: 300;
     line-height: 30px;
+    text-decoration: none;
+}
+
+.connection .link a:hover {
+    text-decoration: underline;
 }
 
 .pic {
