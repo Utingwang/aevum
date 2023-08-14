@@ -11,6 +11,50 @@
         display: inline-block;
         position: relative;
     }
+
+    .photo_album {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 34.5%);
+        display: none;
+    }
+
+    #marquee {
+        display: block;
+        padding: 50px 0;
+        width: 100%;
+
+        .view {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .pic-container {
+            display: flex;
+            animation: marquee 30s infinite linear;
+
+            .pic {
+                flex-basis: 40%;
+                flex-shrink: 0;
+
+                @include media(1024) {
+                    flex-basis: 25%;
+                }
+
+                @include media(768) {
+                    flex-basis: 33.33%;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -26,6 +70,50 @@
         display: inline-block;
         position: relative;
     }
+
+    .photo_album {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 34.5%);
+        display: block;
+    }
+
+    #marquee {
+        display: none;
+        padding: 50px 0;
+        width: 100%;
+
+        .view {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .pic-container {
+            display: flex;
+            animation: marquee 30s infinite linear;
+
+            .pic {
+                flex-basis: 40%;
+                flex-shrink: 0;
+
+                @include media(1024) {
+                    flex-basis: 25%;
+                }
+
+                @include media(768) {
+                    flex-basis: 33.33%;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -40,6 +128,50 @@
         background-color: rgba(212, 189, 156, 1);
         display: inline-block;
         position: relative;
+    }
+
+    .photo_album {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 34.5%);
+        display: block;
+    }
+
+    #marquee {
+        display: none;
+        padding: 50px 0;
+        width: 100%;
+
+        .view {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .pic-container {
+            display: flex;
+            animation: marquee 30s infinite linear;
+
+            .pic {
+                flex-basis: 40%;
+                flex-shrink: 0;
+
+                @include media(1024) {
+                    flex-basis: 25%;
+                }
+
+                @include media(768) {
+                    flex-basis: 33.33%;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
     }
 }
 
@@ -118,18 +250,33 @@
     top: -200px;
 } */
 
-.photo_album {
+/* .photo_album {
     max-width: 1200px;
     margin: auto;
     padding: 60px 0;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(3, 34.5%);
-}
+} */
 
 .photo_album img {
     max-width: 100%;
 }
+
+
+/* .gallery__main {
+    margin: auto;
+    width: 1000px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery__main ul {
+    position: absolute;
+    top: 0;
+    left: 25px;
+} */
 
 /* -----------小圖漂浮效果---------- */
 .move1 {
@@ -175,3 +322,131 @@
         transform: translate3d(0, 0%, 0);
     }
 }
+
+
+
+
+
+/* 圖片跑馬燈 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: inherit;
+    list-style: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
+}
+
+@mixin media($max) {
+    @media (max-width: $max + px) {
+        @content;
+    }
+}
+
+/* @keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-(20% * 5));
+    }
+}
+
+@include media(1024) {
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-(25% * 5));
+        }
+    }
+}
+
+@include media(768) {
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-(33.33% * 5));
+        }
+    }
+} */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+@include media(1024) {
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-25%);
+        }
+    }
+}
+
+@include media(768) {
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-33.33%);
+        }
+    }
+}
+
+
+/* #marquee {
+    padding: 50px 0;
+    width: 100%;
+
+    .view {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .pic-container {
+        display: flex;
+        animation: marquee 30s infinite linear;
+
+        .pic {
+            flex-basis: 40%;
+            flex-shrink: 0;
+
+            @include media(1024) {
+                flex-basis: 25%;
+            }
+
+            @include media(768) {
+                flex-basis: 33.33%;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+} */
