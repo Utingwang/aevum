@@ -336,12 +336,12 @@
     list-style: none;
 }
 
-html,
+/* html,
 body {
     margin: 0;
     padding: 0;
     background-color: #e8e8e8;
-}
+} */
 
 @mixin media($max) {
     @media (max-width: $max + px) {
