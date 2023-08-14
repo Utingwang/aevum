@@ -22,38 +22,17 @@
         display: none;
     }
 
-    #marquee {
+    .box {
+        position: relative;
+        max-width: 800px;
+        height: 166px;
+        padding-top: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         display: block;
-        padding: 50px 0;
-        width: 100%;
-
-        .view {
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .pic-container {
-            display: flex;
-            animation: marquee 30s infinite linear;
-
-            .pic {
-                flex-basis: 40%;
-                flex-shrink: 0;
-
-                @include media(1024) {
-                    flex-basis: 25%;
-                }
-
-                @include media(768) {
-                    flex-basis: 33.33%;
-                }
-            }
-        }
-
-        img {
-            width: 100%;
-            vertical-align: middle;
-        }
     }
 }
 
@@ -81,38 +60,17 @@
         display: block;
     }
 
-    #marquee {
+    .box {
+        position: relative;
+        max-width: 800px;
+        height: 166px;
+        padding-top: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         display: none;
-        padding: 50px 0;
-        width: 100%;
-
-        .view {
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .pic-container {
-            display: flex;
-            animation: marquee 30s infinite linear;
-
-            .pic {
-                flex-basis: 40%;
-                flex-shrink: 0;
-
-                @include media(1024) {
-                    flex-basis: 25%;
-                }
-
-                @include media(768) {
-                    flex-basis: 33.33%;
-                }
-            }
-        }
-
-        img {
-            width: 100%;
-            vertical-align: middle;
-        }
     }
 }
 
@@ -140,38 +98,17 @@
         display: block;
     }
 
-    #marquee {
+    .box {
+        position: relative;
+        max-width: 800px;
+        height: 166px;
+        padding-top: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         display: none;
-        padding: 50px 0;
-        width: 100%;
-
-        .view {
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .pic-container {
-            display: flex;
-            animation: marquee 30s infinite linear;
-
-            .pic {
-                flex-basis: 40%;
-                flex-shrink: 0;
-
-                @include media(1024) {
-                    flex-basis: 25%;
-                }
-
-                @include media(768) {
-                    flex-basis: 33.33%;
-                }
-            }
-        }
-
-        img {
-            width: 100%;
-            vertical-align: middle;
-        }
     }
 }
 
@@ -324,129 +261,28 @@
 }
 
 
-
-
-
-/* 圖片跑馬燈 */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    color: inherit;
-    list-style: none;
-}
-
-/* html,
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #e8e8e8;
+/* ----------跑馬燈---------- */
+/* .box {
+    position: relative;
+    max-width: 800px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 } */
 
-@mixin media($max) {
-    @media (max-width: $max + px) {
-        @content;
-    }
+.list {
+    left: 0px;
+    display: flex;
+    position: absolute;
 }
 
-/* @keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-(20% * 5));
-    }
+.photo {
+    margin-left: 2px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-@include media(1024) {
-    @keyframes marquee {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-(25% * 5));
-        }
-    }
-}
-
-@include media(768) {
-    @keyframes marquee {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-(33.33% * 5));
-        }
-    }
-} */
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-20%);
-    }
-}
-
-@include media(1024) {
-    @keyframes marquee {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-25%);
-        }
-    }
-}
-
-@include media(768) {
-    @keyframes marquee {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-33.33%);
-        }
-    }
-}
-
-
-/* #marquee {
-    padding: 50px 0;
-    width: 100%;
-
-    .view {
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .pic-container {
-        display: flex;
-        animation: marquee 30s infinite linear;
-
-        .pic {
-            flex-basis: 40%;
-            flex-shrink: 0;
-
-            @include media(1024) {
-                flex-basis: 25%;
-            }
-
-            @include media(768) {
-                flex-basis: 33.33%;
-            }
-        }
-    }
-
-    img {
-        width: 100%;
-        vertical-align: middle;
-    }
-} */
