@@ -152,6 +152,7 @@
         display: block;
         margin: 0;
         transition: 0.3s;
+        cursor: pointer;
     }
 
     .book_room_txt {
@@ -310,6 +311,7 @@
 
 .shopping_cart button span {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .shopping_cart button span:hover {
@@ -354,8 +356,12 @@
 }
 
 .ct span {
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 13px;
+}
+
+.ct img {
+    height: 14px;
 }
 
 .book_room_txt a {
