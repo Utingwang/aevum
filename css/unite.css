@@ -486,7 +486,7 @@ nav .main-header .member a {
 
 footer {
     background-color: rgba(139, 139, 139, 1);
-    padding: 30px;
+    padding-top: 30px;
 }
 
 /* .maun_buttom {
@@ -718,6 +718,13 @@ footer {
     color: #CEB48E;
 }
 
+.tibame {
+    text-align: center;
+    color: #fff;
+    background-color: #b8b8b8;
+    padding: 15px 10px;
+    line-height: 1.5;
+}
 
 
 
