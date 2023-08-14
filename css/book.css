@@ -283,6 +283,7 @@
     line-height: 40px;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 .shopping_cart a {
