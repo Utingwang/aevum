@@ -2,7 +2,7 @@
     .room_bg:nth-child(odd) {
         max-width: 1200px;
         height: auto;
-        background-color: rgba(212, 189, 156, 1);
+        /* background-color: rgba(212, 189, 156, 1); */
         position: static;
         margin-top: 8%;
         border-radius: 0;
@@ -12,7 +12,7 @@
     .room_bg:nth-child(even) {
         max-width: 1200px;
         height: auto;
-        background-color: rgba(212, 189, 156, 1);
+        /* background-color: rgba(212, 189, 156, 1); */
         position: static;
         margin-top: 8%;
         border-radius: 0;
@@ -24,6 +24,25 @@
         position: static;
         top: -160px;
         left: 80px;
+    }
+
+    .room_introduce p {
+        color: #383838;
+        max-width: 1000px;
+        padding: 15px;
+        line-height: 30px;
+        background-color: rgba(212, 189, 156, 1);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        grid-gap: 5px;
+        justify-content: center;
+    }
+
+    .room_bg .room_introduce .grid :nth-child(3) {
+        display: none;
     }
 }
 
@@ -52,6 +71,20 @@
         top: -160px;
         left: 80px;
     }
+
+    .room_introduce p {
+        color: #383838;
+        max-width: 1000px;
+        padding-top: 30px;
+        line-height: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-gap: 5px;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -78,6 +111,20 @@
         position: absolute;
         top: -160px;
         left: 80px;
+    }
+
+    .room_introduce p {
+        color: #383838;
+        max-width: 1000px;
+        padding-top: 30px;
+        line-height: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-gap: 5px;
+        justify-content: center;
     }
 }
 
@@ -119,15 +166,20 @@
     height: auto;
 }
 
-.room_introduce p {
+/* .room_introduce p {
     color: #383838;
     max-width: 1000px;
     padding-top: 30px;
     line-height: 30px;
-}
+} */
 
-.grid {
+/* .grid {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 32%);
     grid-gap: 5px;
-}
+    justify-content: center;
+} */
+
+/* .room_bg .room_introduce .grid :nth-child(3) {
+    display: none;
+} */
