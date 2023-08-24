@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艾凡酒店.VUE｜官方網站</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/unite.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="checkbox" name="" id="menu-switch">
+        <nav class="main-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-big.png" alt="">
+                </a>
+            </div>
+
+            <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="main-nav maun">
+                <a :href="item.link" v-for="(item, index) in navItems" :key="index">{{ item.text }}</a>
+                <div class="member">
+                    <a href="shopping_cart.html"><img src="images/shopping.png" alt="購物車" class="shopping"></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- vue改寫 -->
+
+
+        <!-- 首圖 -->
+        <!-- <div class="index_bg"></div> -->
+        <img :src="bg" alt="" class="bg">
+
+        <div class="book">
+            <table RULES=COLS>
+                <td>
+                    <label>
+                        入住日期<br>
+                        <input type="date">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        退房日期<br>
+                        <input type="date">
+                    </label>
+                </td>
+                <td>
+                    <label for="">入住人數<br></label>
+                    <select name="" id="">
+                        <option value="">2</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="">房間數<br></label>
+                    <select name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </td>
+                <td>
+                    <a href="book.html">
+                        查看空房
+                    </a>
+                </td>
+            </table>
+        </div>
+
+        <div class="book_phone">
+            <table RULES=COLS>
+                <tr>
+                    <td>
+                        <label>
+                            入住日期<br>
+                            <input type="date">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            退房日期<br>
+                            <input type="date">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">入住人數<br></label>
+                        <select name="" id="">
+                            <option value="">2</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="">房間數<br></label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="book.html">
+                            查看空房
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 關於艾凡 -->
+        <section class="about-bg">
+            <div class="about_content">
+                <h1>{{about}}</h1>
+                <p>{{aboutTxt}}</p>
+            </div>
+        </section>
+
+        <!-- 客房介紹 -->
+        <section class="room2">
+            <h2>{{room}}</h2>
+            <div id="roomView">
+                <div v-for="(room, index) in roomCard" :key="index" class="room">
+                    <img :src="room.imgSrc" alt="">
+                    <h3>{{room.title}}</h3>
+                    <p>{{room.txt}}</p>
+                </div>
+            </div>
+            <div id="shiftPanel">
+                <input type="button" id="btnLeft" class="room_btn" value="＜ " style="font-weight:bold;font-size:20px">
+                <input type="button" id="btnRight" class="room_btn" value=" ＞" style="font-weight:bold;font-size:20px">
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>優惠活動</h2>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="discount">
+                        <div class="activity">
+                            <div class="tit">{{activityLeft.title}}</div>
+                            <div class="date">{{activityLeft.date}}</div>
+                        </div>
+                        <a id="link1" href="#">{{activityLeft.text}}
+                            <img :src="activityLeft.imgSrc" alt="住宿優惠">
+                        </a>
+                        <dialog id="infoModal1">
+                            <button id="close1">×</button>
+                            <h3>{{activityLeft.text}}</h3>
+                            <img :src="activityLeft.imgSrc" alt="住宿優惠">
+                            <p>
+                                <span class="boxrem">
+                                    {{activityLeft.p1}}
+                                </span>
+                                <span class="boxrem">
+                                    {{activityLeft.p2}}
+                                </span>
+                                <span class="boxrem">
+                                    {{activityLeft.p3}}
+                                </span>
+                                <span class="boxrem">
+                                    {{activityLeft.p4}}
+                                </span>
+                            </p>
+                            <a class="bounce" href="book.html">{{activityLeft.now}}</a>
+                        </dialog>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 balance">
+                    <div class="other_discount" v-for="(activity, index) in activityRight" :key="index">
+                        <div class="activity">
+                            <div class="tit">{{activity.title}}</div>
+                            <div class="date">{{activity.date}}</div>
+                        </div>
+                        <a id="link2" href="#">{{activity.text}}</a>
+                        <dialog id="infoModal2">
+                            <button id="close2">×</button>
+                            <h3>{{activity.text}}</h3>
+                            <img :src="activity.imgSrc" alt="住宿優惠">
+                            <p>
+                                <span class="boxrem">
+                                    {{activity.p1}}
+                                </span>
+                                <span class="boxrem">
+                                    {{activity.p2}}
+                                </span>
+                                <span class="boxrem">
+                                    {{activity.p3}}
+                                </span>
+                                <span class="boxrem">
+                                    {{activity.p4}}
+                                </span>
+                            </p>
+                            <a class="bounce" href="book.html">{{activity.now}}</a>
+                        </dialog>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section style="background-color:  rgba(212, 189, 156, 1);">
+            <article class="introduce" v-for="(inf, index) in introduce" :key=index>
+                <div :class="inf.imgclassname">
+                    <img class="pc" :src="inf.pcimg" :alt="inf.title">
+                    <img class="phone" :src="inf.phoneimg" :alt="inf.title">
+                </div>
+                <div :class="inf.txtclassname">
+                    <h3>{{inf.title}}</h3>
+                    <p>{{inf.p}}</p>
+                    <div class="more" :style="inf.more_style">
+                        <a :href="inf.more_img" class="more_btn">
+                            {{inf.more_name}}
+                        </a>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <a href="book.html" class="fast">
+            快速訂房
+        </a>
+
+
+
+        <footer>
+            <div class="maun_buttom">
+                <a :href="item.link" v-for="(item, index) in mainButtom" :key="index">{{ item.text }}</a>
+            </div>
+            <div class="information">
+                <div class="footer_logo">
+                    <a href="index.html"><img src="images/logo-big.png" alt="logo"></a>
+                </div>
+                <div class="focus">
+                    <h3>關注艾凡</h3>
+                    <a v-for="icon in socialMediaIcons" :key="icon.name" :href="icon.link">
+                        <img :src="icon.imageSrc" :alt="icon.name">
+                    </a>
+                </div>
+
+                <div class="connection">
+                    <h3>艾凡資訊</h3>
+                    <a v-for="(item, index) in information" :key="information" :href="item.link">{{item.text}}<br></a>
+                </div>
+            </div>
+    </div>
+    <div class="tibame">
+        本網站為緯育TibaMe前端班第86期學員專題作品，本平台僅供學習、展示之用。
+    </div>
+    </footer>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    bg: 'images/index.jpg',
+                    about: '關於艾凡',
+                    aboutTxt: '歡迎蒞臨艾凡酒店，這裡是品味與奢華的絕佳結合之地。<br>我們的高級酒店以無與倫比的服務和精緻的細節而聞名，為每一位客人締造難忘的入住體驗。<br>從您踏進大堂的那一刻起，我們的專業團隊將竭盡全力，以完美的禮儀和熱情的服務迎接您。',
+                    room: '客房',
+
+                    navItems: [
+                        {
+                            link: "about_vue.html",
+                            text: "關於艾凡",
+                        },
+                        {
+                            link: "room.html",
+                            text: "客房介紹",
+                        },
+                        {
+                            link: "food.html",
+                            text: "餐飲美饌",
+                        },
+                        {
+                            link: "about.html",
+                            text: "飯店設施",
+                        },
+                        {
+                            link: "contact.html",
+                            text: "交通資訊",
+                        },
+                        {
+                            link: "book.html",
+                            text: "訂房",
+                        },
+                    ],
+                    roomCard: [
+                        {
+                            imgSrc: "images/book1-1.jpg",
+                            title: '高級客房',
+                            txt: '高級客房提供了一個寬敞、舒適的環境，讓您在繁忙的旅程中得到放鬆和休息，讓您感受到家外之家的舒適。',
+                        },
+                        {
+                            imgSrc: "images/book2-1.jpg",
+                            title: '豪華套房',
+                            txt: '豪華套房擁有寬敞的客廳區域，設有獨立的用餐區域和寬敞的露台，讓您欣賞壯麗的景色，享受美好的時光。',
+                        },
+                        {
+                            imgSrc: "images/book3-1.jpg",
+                            title: '家庭客房',
+                            txt: '家庭客房提供了寬敞的空間和多功能的設施，讓您和家人可以共同度過愉快的時光，並成為共創美好回憶的理想場所。',
+                        },
+                        {
+                            imgSrc: "images/book4-1.jpg",
+                            title: '豪華家庭套房',
+                            txt: '豪華家庭套房是專為追求極致奢華和家庭聚會的客人而設計的特別空間，營造出典雅而溫馨的氛圍。',
+                        },
+                        {
+                            imgSrc: "images/book5-1.jpg",
+                            title: '艾凡套房',
+                            txt: '艾凡套房是一個空間寬敞、設施完善的尊榮之地，包括多個臥室、寬敞的客廳、獨立用餐區域，確保您的住宿體驗達到最高水準。',
+                        },
+                    ],
+
+                    activityLeft: {
+                        title: "住宿優惠",
+                        imgSrc: "images/index_activity.jpg",
+                        date: "2023/07/01-2023/08/31",
+                        text: "7/1-8/28 暑假入住更優惠 ❚ 四人同行享85折優惠！",
+                        p1: "炎炎夏日，總是讓人渴望著逃離都市的煩囂，尋找一片寧靜的天地。在這個炎夏，我們為您帶來了一個令人振奮的好消息：7月1日至8月28日期間，暑假期間入住我們的酒店將享受特別的優惠！",
+                        p2: "無論您是想帶著家人一同享受愉快的假期，還是與摯友共度一個難忘的時光，這個優惠絕對會讓您欣喜不已。特別優惠為四人同行入住即享受85折的超值優惠，讓您的旅程更具實惠。",
+                        p3: "我們的酒店將為您提供溫馨舒適的住宿環境，讓您遠離日常的瑣事，盡情放鬆身心。在炎炎夏日裡，您可以盡情享受我們的室內空調、寬敞的客房和舒適的床品，讓您在一天的疲勞後得到完全的恢復。",
+                        p4: "在這個特別的暑假季節，讓我們的酒店成為您的家外之家。無論是與家人共度歡樂時光，還是和朋友一同探索新奇，我們都將竭誠歡迎您的到來。別錯過這個難得的機會，立即預訂，體驗夏日的清涼與愜意吧！",
+                        now: "立即訂房>>>"
+                    },
+
+                    activityRight: [
+                        {
+                            title: "住宿優惠",
+                            imgSrc: "images/index_activity2.jpg",
+                            date: "2023/06/01-2023/08/31",
+                            text: "三天兩夜長住優惠 ❚ 平日雙人入住豪華套房贈送一份香榭時光咖啡廳下午茶券！",
+                            p1: "在繁忙的生活節奏中，我們總是渴望找到一處寧靜的避風港，讓心靈得到片刻的寧靜。為此，我們特別推出了令人振奮的「三天兩夜長住優惠」，讓您在這個夏季感受到真正的放鬆和愜意",
+                            p2: "只要您在平日選擇我們的豪華套房入住，您不僅能夠享受到優雅的住宿環境，還將獲得一份香榭時光咖啡廳的下午茶券作為贈禮！這份贈券將帶給您愉快的味蕾體驗，讓您在優美的環境中品味美味的點心和飲品，讓您的下午時光更加愜意。",
+                            p3: "我們的豪華套房將為您提供寬敞舒適的住宿環境，讓您遠離煩囂，享受寧靜的時光。而贈送的下午茶券則是我們對您的感謝，希望能夠為您的入住體驗增添一份美好。",
+                            p4: "無論是與摯愛一同度過浪漫的假期，還是獨自沉澱心靈，我們的優惠將為您打造一個難忘的住宿體驗。別錯過這個特別的機會，立即預訂，讓我們為您打造一段充滿美好回憶的旅程。",
+                            now: "立即訂房>>>"
+                        },
+                        {
+                            title: "住宿優惠",
+                            imgSrc: "images/index_activity3.jpg",
+                            date: "2023/05/01-2023/06/15",
+                            text: "艾凡酒店ⅩDyson ❚ 凡入住四人房，一房一資格抽Dyson吹風機",
+                            p1: "在艾凡酒店，我們始終致力於為每位客人提供獨特且難以忘懷的住宿體驗。現在，我們推出了令人興奮的優惠活動：「艾凡酒店ⅩDyson」！當您選擇入住我們的四人房，將有一個驚喜等著您——每一間房間將有一次抽中的機會，贏得Dyson吹風機！",
+                            p2: "Dyson吹風機一直以來都是高效且優雅的代名詞，其獨特的科技創新和出色的性能使其成為現代生活的不可或缺之物。當您入住我們的四人房，不僅可以感受我們豪華舒適的住宿環境，還將有機會獲得這款優質的吹風機，為您的生活增添更多的便利和奢華。",
+                            p3: "我們深信，您的住宿體驗不僅僅是一個旅程，更是一段回憶。通過這個特別的活動，我們希望能夠為您帶來一份額外的驚喜，讓您的艾凡之旅更加特別和難以忘懷。",
+                            p4: "別等待，立即預訂我們的四人房，享受優惠，同時也有機會贏得Dyson吹風機！讓我們一同創造一個充滿驚喜和精彩的旅程，期待您的光臨。",
+                            now: "立即訂房>>>"
+                        },
+                        {
+                            title: "住宿優惠",
+                            imgSrc: "images/index_activity4.jpg",
+                            date: "2023/04/15-2023/06/01",
+                            text: "限時優惠 ❚ 2023/04/15-06/01持國旅卡入住艾凡酒店 平日只要$4000起！",
+                            p1: "感謝您對艾凡酒店的支持！我們為了回饋您的厚愛，特別推出了一個限時優惠，讓您在2023年4月15日至6月1日期間，以優惠價格入住艾凡酒店。",
+                            p2: "只要您持有國旅卡，並選擇在平日入住我們的酒店，您將享受到特別價格，僅需$4000起！這個價格將讓您在充滿豪華和舒適的住宿環境中，度過一個難以忘懷的假期。",
+                            p3: "我們的酒店將為您提供一系列優質的設施和服務，讓您的入住體驗更加愉快。不僅如此，我們的地理位置優越，讓您可以輕鬆探索周邊的景點和美食。",
+                            p4: "這個限時優惠僅限2023年4月15日至6月1日期間，名額有限，請您儘早預訂以確保您能夠享受到這個特別的價格。我們期待能夠為您打造一個充滿美好回憶的住宿體驗。謝謝您的支持，期待您的光臨！",
+                            now: "立即訂房>>>"
+
+                        },
+                    ],
+
+                    introduce: [
+                        {
+                            imgclassname: "intreoduce_pic",
+                            pcimg: "images/index_view.jpg",
+                            phoneimg: "images/index_view767.jpg",
+                            txtclassname: "intreoduce_txt",
+                            title: "極致景觀",
+                            p: "夢幻夜色，璀璨星空，一個屬於您的宇宙奇蹟等待著您。歡迎來到我們的艾凡飯店，一個擁有絕美夜景的天堂。<br>每一間房間都特別設計，讓您盡情享受這令人陶醉的夜景。高樓層的視野廣闊，眺望著閃爍的繁星，瞭望遠方城市的燈火，您彷彿成為這個城市的主人，俯瞰著它的一切。",
+                            more_style: "",
+                            more_img: "",
+                            more_name: "",
+                        },
+                        {
+                            imgclassname: "intreoduce_pic_exchange",
+                            pcimg: "images/index_eat.jpg",
+                            phoneimg: "images/index_eat767.jpg",
+                            txtclassname: "intreoduce_txt_exchange",
+                            title: "精緻佳餚",
+                            p: "在這個迷人的環境中，您將享受到我們獨特而精心設計的餐飲體驗。我們的廚師團隊以卓越的烹飪技巧和對食材的深刻理解，為您準備出一系列精緻絕倫的菜餚。<br>無論是獨特的風味組合還是精緻的擺盤，我們的菜品將為您帶來美食的盛宴。每一口都是一次對味蕾的冒險，讓您的舌尖感受到多重層次的美味。",
+                            more_style: "",
+                            more_img: "food.html",
+                            more_name: "餐廳一覽",
+                        },
+                        {
+                            imgclassname: "intreoduce_pic",
+                            pcimg: "images/index_relax.jpg",
+                            phoneimg: "images/index_relax767.jpg",
+                            txtclassname: "intreoduce_txt",
+                            title: "身心放鬆",
+                            p: "游泳池、SPA和健身房將為您提供一個全面的休閒和健康體驗。我們的專業團隊將竭誠為您提供舒適、放鬆和專業的服務，確保您在這些設施中度過難忘的時光。<br>來到艾凡酒店，您將感受到無限尊貴和享受，並在這裡度過難忘的時光，留下美好的回憶和無盡的放鬆。",
+                            more_style: "max-width: 700px",
+                            more_img: "facility.html",
+                            more_name: "設施一覽",
+                        },
+                    ],
+
+                    connection: [
+                        {
+                            link: "tel:+886-3-4251108",
+                            text: "TEL：03-4251108",
+                        },
+                        {
+                            link: "tel:+886-3-4251108",
+                            text: "FAX：03-4251108",
+                        },
+                        {
+                            link: "aevum.gmail.com",
+                            text: "EMAIL：aevum.gmail.com",
+                        },
+                        {
+                            link: "https://goo.gl/maps/xiSkT5bgHmkTSxJUA",
+                            text: "ADDRESS：桃園市中壢區復興路46號9樓",
+                        },
+                    ],
+                    mainButtom: [
+                        {
+                            link: "about_vue.html",
+                            text: "關於艾凡/",
+                        },
+                        {
+                            link: "room.html",
+                            text: "客房介紹/",
+                        },
+                        {
+                            link: "food.html",
+                            text: "餐飲美饌/",
+                        },
+                        {
+                            link: "about.html",
+                            text: "飯店設施/",
+                        },
+                        {
+                            link: "contact.html",
+                            text: "交通資訊",
+                        },
+                    ],
+                    socialMediaIcons: [
+                        { name: 'mail', imageSrc: 'images/mail.svg', link: '#' },
+                        { name: 'facebook', imageSrc: 'images/facebook.svg', link: '#' },
+                        { name: 'line', imageSrc: 'images/line.svg', link: '#' },
+                        { name: 'instagram', imageSrc: 'images/instagram.svg', link: '#' },
+                        { name: 'youtube', imageSrc: 'images/youtube.svg', link: '#' }
+                    ],
+                    information: [
+                        {
+                            link: "tel:+886-3-4251108",
+                            text: "TEL：03-4251108",
+                        },
+                        {
+                            link: "tel:+886-3-4251108",
+                            text: "FAX：03-4251108",
+                        },
+                        {
+                            link: "aevum.gmail.com",
+                            text: "EMAIL：aevum.gmail.com",
+                        },
+                        {
+                            link: "https://goo.gl/maps/xiSkT5bgHmkTSxJUA",
+                            text: "ADDRESS：桃園市中壢區復興路46號9樓",
+                        },
+                    ],
+                }
+            }
+
+
+        }).mount('#app')
+    </script>
+
+</body>
+
+</html>
+
+<style>
+    .bg {
+        width: 100%;
+        vertical-align: top;
+    }
+</style>
